@@ -1,0 +1,153 @@
+    @charset "UTF-8";
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+       v2.0 | 20110126
+       License: none (public domain)
+    */
+
+    * {
+      margin: 0px;
+      padding: 0px;
+      /*outline: 1px solid red;*/ }
+
+    body {
+      font-family: "微軟正黑體";
+      background-color: black;
+      color: #5AE6DB;
+      /* background-image: url("../img/Galaxy_1.jpg");
+    background-size: cover;
+      */
+    }
+
+    .container {
+          width:100%;
+          margin: 0 auto;
+          position:relative;
+    }
+    .Bookingh1 {
+      font-size: 32px;
+      text-align: center;
+      margin: 96px 10px;
+      margin-bottom: 31px;
+      color: white;
+      line-height:1.5;
+      letter-spacing: 2px;
+    }
+
+    @media screen and (max-width:414px) {
+      .Bookingh1 {
+        width: 100%;
+        margin-top: 92px;
+        margin-left: auto;
+        margin-right: auto; 
+        } 
+    }
+
+    .Bookingh2 {
+      font-size: 24px;
+      margin: 10px 10px;
+      margin-top: 50px;
+      margin-left: 27%;
+      color: white;
+      line-height:1.5;
+      letter-spacing: 2px;
+     }
+    @media screen and (max-width:1024px) and (min-width:415px){
+      .Bookingh2{
+        margin-left: 20%;
+      }
+    }
+    @media screen and (max-width:414px) {
+      .Bookingh2 {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto; } }
+
+    .memberinfo {
+      text-align: left;
+      /*margin-left: 27%;*/
+      margin:0 auto;
+      font-size: 20px;
+      line-height:1.5;
+      letter-spacing: 2px;
+      color: white;
+      width: 45.5%;
+      border: 3px solid #35ffea; 
+    }
+    @media screen and (max-width:1024px) and (min-width:415px){
+      .memberinfo{
+        width: 60.5%;
+      }
+    }
+    @media screen and (max-width:414px) {
+      .memberinfo {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto; } }
+
+    .memberinfo p {
+      margin: 10px 10px;
+      padding: 10px 10px; }
+
+    .orderinfo {
+      text-align: left;
+      /*margin-left: 27%;*/
+      margin:0 auto;
+      font-size: 20px;
+      line-height:1.5;
+      letter-spacing: 2px;
+      color: white;
+      width: 45.5%;
+      border: 3px solid #35ffea; 
+    }
+    @media screen and (max-width:1024px) and (min-width:415px){
+      .orderinfo{
+        width: 60.5%;
+      }
+    }
+    @media screen and (max-width:414px) {
+      .orderinfo {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto; } }
+
+    .orderinfo p {
+      margin: 10px 10px;
+      padding: 10px 10px; }
+
+    .orderlistsection table {
+      margin: 0 auto;
+      margin-top:20px;
+      margin-bottom: 30px;
+      font-size: 20px;
+      line-height:1.5;
+      letter-spacing: 2px;
+      color: white;
+      border: 3px solid #35ffea;
+      width: 46%; }
+    @media screen and (max-width:1024px) and (min-width:415px){
+      .orderlistsection table {
+        width: 60.5%;
+      }
+    }
+    @media screen and (max-width:414px) {
+      .orderlistsection table {
+        width: 85%; } }
+
+    th {
+      text-align: center;
+      padding: 20px 10px; }
+
+    td {
+      text-align: left;
+      padding: 10px 10px;
+      border-bottom:1px solid #555; 
+    }
+
+    .integral {
+      display: inline-block; }
+
+    .Bookingh3 {
+      font-size: 20px; }
+
+    input {
+      font-size: 10px; }

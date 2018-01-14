@@ -1,0 +1,348 @@
+*{
+/*	outline: 1px solid red;*/
+	box-sizing: border-box;
+  text-decoration: none;
+  color: white;
+}
+
+body{
+	background-color: black;
+  font-family: "微軟正黑體";
+}
+body{
+  background: black;
+}
+body::-webkit-scrollbar {
+    width: 10px;
+}
+body::-webkit-scrollbar-track {
+  -webkit-border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: rgb(0,5,50);
+    z-index: 101;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(100,255,243,1);
+ /* outline: 1px solid rgba(100,255,243,1);*/
+}
+
+ /* input-number*/
+  .ctrl {
+      display: inline-block;
+      vertical-align: middle;
+      width: 45%;
+      max-width: 150px;
+      height: 30px;
+      background-color: #222;
+      border-radius: 3px;
+      font-size: 22px;
+      position: relative;
+      float: right;
+
+    }
+    .ctrl-counter {
+      position: absolute;
+      width: 53.3%;
+      max-width: 80px;
+      height: 30px;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      color: #333C48;
+      text-align: center;
+      overflow: hidden;
+      border : 1px solid rgba(90, 230, 219,0.5);
+    }
+
+    .ctrl-counter-input {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      z-index: 2;
+      box-shadow: none;
+      outline: none;
+      border: none;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: center;
+      background-color:rgba(0,0,0,0.5);
+      transition: all 0.1s ease-in;
+      color: #5AE6DB;
+    }
+   .ctrl-counter-input:active{
+    background-color:rgba(0,0,0,1);
+   }
+   .ctrl-counter-input:focus{
+    background-color:rgba(0,0,0,1);
+    color: white;
+   }
+    .ctrl-button {
+      width: 23.3%;
+      max-width: 35px;
+      height: 30px;
+      line-height: 28px;
+      text-align: center;
+      color: #000;
+      cursor: pointer;
+      background-color: #5AE6DB;
+      -webkit-transition: background-color 100ms ease-in;
+      transition: background-color 100ms ease-in;
+    }
+    .ctrl-button:hover {
+      background-color: #54ebff;
+      -webkit-transition: background-color 100ms ease-in;
+      transition: background-color 100ms ease-in;
+    }
+    .ctrl-button:active {
+      background-color: #008da0;
+      -webkit-transition: background-color 100ms ease-in;
+      transition: background-color 100ms ease-in;
+    }
+    .ctrl-button-decrement {
+      position: absolute;
+      top:0;
+      left:0;
+      border-radius: 3px 0 0 3px;
+    }
+    .ctrl-button-increment {
+      position: absolute;
+      top:0;
+      right:0;
+      border-radius: 0 3px 3px 0;
+    }
+
+ /* input-number-end*/
+
+
+
+.fbtWrapper{
+  width:80%;
+  max-width: 1440px;
+  padding: 8% 2% 2% 2%;
+  margin: 0 auto;
+}
+.fbtWrapper .ticketbox{
+	width: 25%;
+  min-width: 250px;
+  margin:4.1%;
+  float: left;
+
+}
+.fbtWrapper:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+/*ticket icon-rotate*/
+
+.ticketbox .ticketTitlebox .ticket{
+	width: 35px;
+  height: 35px;
+  text-align: center;
+	margin: 20px 20px 20px 0;
+	padding: 8px;
+	box-shadow: 0px 0px 5px #33FFFF;
+	background: repeating-linear-gradient(transparent 0px, transparent 1px,transparent 1px, transparent 3px,rgba(0, 102, 204,0.5) 3px, rgba(0, 102, 204,0.8) 4px);
+  	     -webkit-transform-style: preserve-3d;
+           -moz-transform-style: preserve-3d;
+             -o-transform-style: preserve-3d;
+                transform-style: preserve-3d;
+  animation:rotateY 5s linear 0s infinite;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@keyframes rotateY {
+    0% {
+        -webkit-transform:rotateY(0deg);
+        -moz-transform:rotateY(0deg);
+        transform:rotateY(0deg);
+    }
+    25% {
+        -webkit-transform:rotateY(90deg);
+        -moz-transform:rotateY(90deg);
+        transform:rotateY(90deg);
+    }
+    50% {
+        -webkit-transform:rotateY(180deg);
+        -moz-transform:rotateY(180deg);
+        transform:rotateY(180deg);
+    }
+    75% {
+        -webkit-transform:rotateY(270deg);
+        -moz-transform:rotateY(270deg);
+        transform:rotateY(270deg);
+    }
+    100% {
+        -webkit-transform:rotateY(360deg);
+        -moz-transform:rotateY(360deg);
+        transform:rotateY(360deg);
+    }
+}
+.ticketbox .ticket figure{
+      display: block;
+      height:75%;
+      width: 75%;
+      text-align: center;
+      font-weight: bold;
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+  -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+      -o-backface-visibility: hidden;
+         backface-visibility: hidden;
+}
+.ticketbox .ticket figure img{
+  width: 100%;
+  filter: drop-shadow(0px 0px 1px rgba(255,255,255,0.5));
+}
+.ticketbox .ticket .front{	
+  /*transform:perspective(20px);*/
+}
+.ticketbox .ticket .back{
+  line-height:26.25px;
+  font-weight: bold;
+  transform:translate(-50%,-50%) rotateY(180deg);
+}
+.ticketbox .ticketTitlebox .ticketTitle{
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 24px;
+  color: #42D6CA;
+  font-family: "微軟正黑體";
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+/*ticket icon-rotate end*/
+.ticketbox .shortInfo{
+  width: 100%;
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+
+.f_img{
+	position: relative;
+}
+.f_img img{
+	width: 100%;
+}
+.f_img .cover{
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top:0;
+	background-color: rgba(51, 255, 255 ,0.1);
+	background-image:  repeating-linear-gradient(transparent 0px, transparent 1px,transparent 1px, transparent 3px,rgba(0, 102, 204,0.2) 3px, rgba(0, 102, 204,0.2) 4px);
+}
+
+
+.ticketbox .adult,.ticketbox .child{
+  width: 100%;
+  font-size:18px;
+  margin: 20px 0;
+}
+.ticketbox .adult span,.ticketbox .child span{
+  float: left;
+  padding-top: 5px;
+  letter-spacing: 1.5px;
+}
+.ticketbox .adult span.price,.ticketbox .child span.price{
+  color: #5AE6DB;
+}
+.ticketbox .adult:after,.ticketbox .child:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+/*btn*/
+.f_submit{
+	outline: none;
+  position: relative;
+  color: white;
+  width: 100%;
+  height: 35px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: rgba(255, 193, 22,0.2);
+  transition: 0.2s linear;
+  line-height: 35px;
+  text-align: center;
+
+}
+.f_submit:hover{
+  background-color: rgba(255, 193, 22,0.8);
+  color: black;
+  cursor: pointer;
+}
+.f_submit:before{
+  content: "";
+  display: block;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  border:2px solid rgba(255, 193, 22,0.8);
+  transition: 0.2s linear;
+}
+.f_submit:hover:before{
+
+  width: 103%;
+  height: 120%;
+  border: 2px solid rgba(255, 193, 22,0.8);
+}
+
+/*=========燈箱==============================*/
+#fullBlack{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(transparent 0px, transparent 1px,transparent 1px, transparent 3px,rgba(0,0, 0,0.5) 3px, rgba(0, 0, 0,0.8) 4px);
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+}
+.confirmLightbox{
+  width: 450px;
+  height: 250px;
+  border: 2px solid rgba(55,255,243,0.8);
+  box-shadow: 0 0 1px rgba(55,255,243,0.8),0 0 3px rgba(55,255,243,0.5),0 0 5px rgba(55,255,243,0.3);
+  background-color: black;
+  position: fixed;
+  top:50%;
+  left: 50%;
+  padding: 15px;
+  transform: translate(-50%,-50%);
+  text-align: center;
+
+}
+
+.confirmLightbox .content{
+  padding: 20% 10%;
+  height: 85%;
+
+}
+.confirmLightbox a{
+  margin: 0 30px;
+  letter-spacing: 2px;
+  padding: 5px 20px;
+  background-color: black;
+  color: rgb(55,255,243);
+  border: 1px solid rgba(55,255,243,0.8);
+  box-shadow: 0 0 1px rgba(55,255,243,0.8),0 0 3px rgba(55,255,243,0.5),0 0 5px rgba(55,255,243,0.3);
+}
+/*=========燈箱END==============================*/

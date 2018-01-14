@@ -1,0 +1,98 @@
+*{
+	/*outline: 1px solid red;*/
+}
+body{
+	background-color: rgb(0, 0, 0);
+	font-family: 微軟正黑體;
+}
+.text input{
+	text-indent: 10px;
+	border: none;
+	height: 25px;
+	margin: 10px 0;
+	border-radius: 50px;
+}
+/* 中間背景 */
+.cont{
+	width: 35%;
+	min-width: 400px;
+	/* height: auto; */
+    background-color: rgba(75, 74, 74,0.5);
+    margin: 0 auto;
+    margin-top: 100px;
+	position: relative;
+}
+.cont .bar{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+@media screen and (max-width: 767px) {
+
+.cont{
+    max-width: 100%;
+    }
+
+}
+
+
+/* 中間註冊 */
+.SingUp{
+	box-sizing: border-box;
+	padding: 20px;
+	z-index: 99;
+}
+.SingUp h3{
+	font-size: 30px;
+	text-align: center;
+    color:rgb(10, 242, 250);
+    
+}
+.SingUp .text{
+	font-size: 18px;
+	text-align: center;
+	color:rgb(10, 242, 250);
+	user-select: none;
+	outline: none;
+	
+}
+.SingUp .text input{
+	border-radius: 10px;
+	margin: 10px;
+}
+@media screen and (max-width: 767px) {
+
+.SingUp .text input{
+	max-width: 100%;
+    }
+}
+.btn{
+	margin: 20px auto 10px auto;
+	text-align: center;
+}
+.hint{
+	text-align: right;
+	font-size: 12px;
+	color: azure;
+}.hint_hidden{
+	visibility: hidden;
+}.signupbtn{
+	font-size: 16px;
+	box-sizing: border-box;
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+}
+.signupbtn:nth-of-type(1){
+	margin-right: 10px;
+}#check_mem_id{
+	position: absolute;
+	top: 125px;	
+	right: 65px;
+	font-family: 微軟正黑體;
+	background-color: lightblue;
+	border: none;
+	color: navy;
+	padding: 5px;
+}
